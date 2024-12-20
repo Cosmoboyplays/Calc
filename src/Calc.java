@@ -103,7 +103,7 @@ public class Calc {
         int prevValue = 0;
 
         for (int i = roman.length() - 1; i >= 0; i--) {
-            char currentChar = roman.charAt(i);
+            char currentChar = roman.charAt(i);   // Метод charAt(i) возвращает символ строки roman, находящийся на позиции i
             int currentValue = romanMap.get(currentChar);
 
             if (currentValue < prevValue) {
